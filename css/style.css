@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.hero
+{
+    height: 100vh;
+    width: 100%;
+    background-image: url(../Assets/sky-image.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+}
+.highway
+{
+    height: 164px;
+    width: 500%;
+    background-image: url(../Assets/road777.jpg);
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background-repeat: repeat-x;
+    animation: highway 5s linear infinite;
+}
+@keyframes highway
+{
+    100%
+    {
+        transform: translateX(-2000px);
+    }
+}
+.city
+{
+    height: 500px;
+    width: 500%;
+    background-image: url(../Assets/city.jpg);
+    position: absolute;
+    bottom: 164px;
+    display: block-inline;
+    left: 0;
+    right: 0%;
+    z-index: 1;
+    background-repeat: repeat-x;
+    animation: city 20s linear infinite;
+    font-size : 70px;
+    
+}
+@keyframes city
+{
+    100%
+    {
+        transform: translateX(-3400px);
+    }
+}
+.car
+{
+    width: 400px;
+    position: absolute;
+    left: 50%;
+    bottom: 80px;
+    transform: translateX(-50%);
+    z-index: 2;
+
+}
+.car img{
+    width: 100%;
+    animation: car 1s linear infinite;
+}
+                        /*moving the car up and down*/
+@keyframes car
+{
+    100%
+    {
+        transform: translateY(-1px);
+        
+    }
+    50%
+    {
+        transform: translateY(1px);
+
+    }
+    0%
+    {
+        transform: translateY(-1px);
+
+    }
+}
+.wheel
+{
+    position: absolute;
+    left: 50%;
+    bottom: 170px;
+    transform: translateX(-70%);
+    z-index: 2;
+}
+.wheel img
+{
+    width: 85px;
+    height: 85px;
+    animation: wheel 1s linear infinite;
+}
+.back-wheel
+{
+    position: absolute;
+    left: -180px;
+}
+.front-wheel
+{
+    position: absolute;
+    left: 100px;
+}
+@keyframes wheel
+{
+    100%
+    {
+        transform: rotate(360deg);
+    }
+}
+@keyframes wheel
+{
+    100%
+    {
+        transform: rotate(360deg);
+    }
+}
